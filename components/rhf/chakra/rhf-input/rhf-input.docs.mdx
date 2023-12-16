@@ -1,0 +1,22 @@
+---
+description: A RhfInput component.
+---
+
+import { RhfInput } from './rhf-input';
+import { useForm } from 'react-hook-form';
+
+### Component usage
+
+```js
+<RhfInput name="name" control={form.control} />
+```
+
+### Render hello world!
+
+```js live
+export const BasicRhfInput = () => {
+  const form = useForm({ defaultValues: { name: 'test' } });
+
+  return <RhfInput name="name" control={form.control} />;
+};
+```
